@@ -1,12 +1,13 @@
 // set width and height of main svg element 
-var width = 1000,
-    height = 500;
+//var width = 1000,
+//    height = 500;
 
 // adding svg element to body of html 
-var svg = d3.select('body')
-    .append('svg')
-    .attr('width', width)
-    .attr('height', height)
+var svg = d3.select("body")
+   .append("svg")
+   .attr("width", "100%")
+   .attr("height", "100%")
+   .attr("viewBox", "0 0 1000 500");
 
 //colorscale for data points
 var color = d3.scaleQuantize();
